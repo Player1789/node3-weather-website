@@ -33,7 +33,10 @@ const forecast = (lat, lon, callback) => {
 			} else {
 				callback(
 					undefined,
-					`Now it's ${weatherDescription.toLowerCase()}! It is currently ${data.temperature} degrees out. It feels like ${data.feelslike} degrees out.`
+					`Now it's ${weatherDescription.toLowerCase()}!
+					It is currently ${data.temperature} degrees out.
+					It feels like ${data.feelslike} degrees out.
+					The humidity is ${data.humidity}%!`
 				);
 			}
 		}
